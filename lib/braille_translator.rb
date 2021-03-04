@@ -1,8 +1,13 @@
 class BrailleTranslator
-  def initialize() #message file
+
+  def initialize(file_to_translate)
+    @file_to_translate = file_to_translate
   end
 
-  def print_create_message
-    p "Created 'braille.txt' containing 256 characters"
-  end
+  # translate english to braille
+
+
+
+
+  #spit out translated file
 end
