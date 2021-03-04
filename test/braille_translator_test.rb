@@ -12,7 +12,10 @@ class BrailleTranslatorTest < Minitest::Test
   def test_it_can_print_out_create_message
     braille_translator = BrailleTranslator.new
 
-    message = "Created 'braille.txt' containing 256 characters"
+    second_input = "you are awesome"
+    characters = "13"
+
+    message = "Created #{second_input} containing #{characters} characters"
 
     assert_equal message, braille_translator.print_create_message
   end

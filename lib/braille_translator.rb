@@ -3,6 +3,9 @@ class BrailleTranslator
   end
 
   def print_create_message
-    p "Created 'braille.txt' containing 256 characters"
+    first_user_input = gets.chomp
+    second_user_input = gets.chomp
+
+    p "Created #{second_user_input} containing 256 characters"
   end
 end
