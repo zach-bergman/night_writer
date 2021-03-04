@@ -8,4 +8,12 @@ class BrailleTranslatorTest < Minitest::Test
 
     assert_instance_of BrailleTranslator, braille_translator
   end
+
+  def test_it_can_print_out_create_message
+    braille_translator = BrailleTranslator.new
+
+    message = "Created 'braille.txt' containing 256 characters"
+
+    assert_equal message, braille_translator.print_create_message
+  end
 end
