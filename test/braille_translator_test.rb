@@ -8,15 +8,4 @@ class BrailleTranslatorTest < Minitest::Test
 
     assert_instance_of BrailleTranslator, braille_translator
   end
-
-  def test_it_can_print_out_create_message
-    braille_translator = BrailleTranslator.new
-
-    second_user_input = "you are awesome"
-    characters = "13"
-
-    message = "Created #{second_user_input} containing #{characters} characters"
-
-    assert_equal message, braille_translator.print_create_message
-  end
 end
