@@ -1,4 +1,6 @@
 require './lib/braille_translator'
+require './lib/printer'
 
 braille_translator = BrailleTranslator.new() #message file
-braille_translator.print_create_message
+printer = Printer.new
+printer.print_create_message
