@@ -3,9 +3,9 @@ require './lib/dictionary'
 class BrailleTranslator
   attr_reader :english_file
 
-  def initialize(english_file) # pass in file?
+  def initialize #(english_file) # pass in file?
     @dictionary = Dictionary.new
-    @english_file = english_file
+    # @english_file = english_file
   end
 
   def translate_letter(letter)
