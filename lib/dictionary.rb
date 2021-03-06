@@ -1,13 +1,7 @@
 class Dictionary
-  attr_reader :dictionary
-  
-  def initialize
-    @dictionary = {
-      "a" => "b"
+  def full_dictionary
+    full_dictionary = {
+      "a" => "0."
     }
-  end
-
-  def translate_letter(letter)
-    @dictionary[letter]
   end
 end
