@@ -21,6 +21,6 @@ class FileHandler
   end
 
   def set_braille_file_to_english_file
-    open_english_file = create_braille_file 
+    create_braille_file = open_english_file
   end
 end
